@@ -13,8 +13,8 @@ The project is designed to help visualize various data structures and algorithms
 
 ## Currently Built Algorithms
 
-- **StaticSegmentTrees**  
-  A segment tree implementation designed to efficiently perform range queries and updates. It is built using a statically allocated array, with the size calculated based on the input.
+- **SegmentTrees**  
+  A segment tree implementation designed to efficiently perform range queries and updates. It is built using a statically allocated array, with the size calculated based on the input. Can do range min, max, and sum operations
 
 
 ## Learning Goals
@@ -25,3 +25,4 @@ This repository is not only about visualizing existing algorithms but also learn
 - **Backend Algorithm Design**: Through C++, learning how to use REST API libraries to send data.
 - **Frontend Visualization**: Using React, this project visualizes how algorithms and data structures function in real-time, allowing users to step through the logic and understand each stage of execution.
 - **Improving JavaScript Skills**: As React is used for the frontend, this is a great opportunity to practice JavaScript, improve proficiency in React, and get better at building interactive web applications.
+- **Boost Testing Library** Utilizing Boost test libraries to extensively test algorithms
