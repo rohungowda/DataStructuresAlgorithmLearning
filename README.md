@@ -9,12 +9,15 @@ The project is designed to help visualize various data structures and algorithms
 ### Technologies Used
 
 - **C++** for implementing the backend algorithms and data structures.
-- **React** for creating the dynamic and interactive user interface that visualizes algorithm execution.
+- **React, Javascript** for creating the dynamic and interactive user interface that visualizes algorithm execution.
 
 ## Currently Built Algorithms
 
 - **SegmentTrees**  
   A segment tree implementation designed to efficiently perform range queries and updates. It is built using a statically allocated array, with the size calculated based on the input. Can do range min, max, and sum operations
+
+- **Khan's Algorithm**
+  An implementation of Kahn's Algorithm for topological sorting of Directed Acyclic Graphs (DAGs). It uses in-degree tracking and a queue to process nodes in linear order. Efficiently detects cycles and produces a valid topological ordering if one exists.
 
 
 ## Learning Goals
