@@ -1,7 +1,6 @@
 #define BOOST_TEST_MODULE dataset_example68
-#include "../../trees/StaticSegmentTrees.h"
-#include "../../trees/AddSegmentTrees.h"
-#include <climits>
+#include "../../DependencySortAlgorithms/khan.h"
+
 
 #include <boost/test/included/unit_test.hpp>
 #include <boost/test/data/test_case.hpp>
@@ -10,6 +9,46 @@
 
 namespace bdata = boost::unit_test::data;
 
+
+
+
+std::vector<int> check2(){
+    size_t n = 9;
+
+    std::unordered_map<int,std::vector<int>> adj = {
+        {0, {1,2}},
+        {1, {2}},
+        {3, {1}},
+        {4, {2}},
+        {5, {3}},
+        {6, {3}},
+        {7, {3}},
+        {8, {7}}
+
+    };
+
+    std::vector<int> result = KhansAlgorithm(adj,n);
+
+    return result;
+}
+
+
+std::vector<int> test3 = {0, 4, 5, 6, 8, 7, 3, 1, 2};
+
+
+
+
+BOOST_DATA_TEST_CASE(
+    test2,
+    bdata::make(test3) ^ bdata::make(check2()), 
+    rangeQuery, exp)
+{
+      BOOST_TEST(rangeQuery == exp);
+}
+
+
+// dataset generator code
+/*
 template <typename T>
 class SegmentTree_dataset {
     public:
@@ -57,37 +96,4 @@ namespace boost { namespace unit_test { namespace data { namespace monomorphic {
   struct is_dataset<SegmentTree_dataset<int>> : boost::mpl::true_ {};
 }}}}
 
-
-std::vector<int> data = {10, 5, 8, 15, 3, 7, 12, 2, 9, 4};
-
-std::vector<std::pair<int, int>> ranges = {
-    {0, 3}, {2, 5}, {4, 6}, {1, 8}, {0, 9}, {3, 7}, {2, 7}, {5, 9}, {1, 4}, {0, 6}
-};
-
-
-std::vector<int> test = {5, 3, 3, 2, 2, 2, 2, 2, 3, 3};
-
-std::vector<int> check(){
-    StaticSegmentTrees<int> tree = StaticSegmentTrees<int>(INT_MAX);
-    tree.build(data);
-    std::vector<int> result(data.size(),0);
-    for(int i = 0; i < ranges.size(); i++){
-        auto [l,r] = ranges[i];
-        result[i] = tree.Query(l,r);
-    }
-
-    return result;
-}
-
-
-
-
-
-
-BOOST_DATA_TEST_CASE(
-    test1,
-    SegmentTree_dataset(test) ^ bdata::make(check()), 
-    rangeQuery, exp)
-{
-      BOOST_TEST(rangeQuery == exp);
-}
+*/
