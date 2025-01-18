@@ -1,31 +1,15 @@
-# Data Structures and Algorithms Visualizer
+# Project Overview
 
-This repository is a learning project aimed at building a **Data Structures and Algorithms (DSA) Visualizer** using **C++** for the backend implementation of algorithms and **React** for visualizing the algorithms on the frontend. The goal is to enhance understanding of key DSA concepts while also improving JavaScript skills.
-
-## Project Overview
-
-The project is designed to help visualize various data structures and algorithms, showcasing how they work step-by-step. The backend (written in C++) handles the core logic and algorithmic implementations, while the frontend (built with React) provides an interactive visualization of those algorithms.
-
-### Technologies Used
-
-- **C++** for implementing the backend algorithms and data structures.
-- **React, Javascript** for creating the dynamic and interactive user interface that visualizes algorithm execution.
+This repository is a learning project aimed at building a **Data Structures and Algorithms** using **C++**. My goal is to really learn more about commonly used DSA concepts and test them on large amounts of data.
 
 ## Currently Built Algorithms
 
-- **SegmentTrees**  
-  A segment tree implementation designed to efficiently perform range queries and updates. It is built using a statically allocated array, with the size calculated based on the input. Can do range min, max, and sum operations
+- **SegmentTrees**
+	A segment tree implementation designed to efficiently perform range queries and updates. It is built using a statically allocated array, with the size calculated based on the input. Can do range min, max, and sum operations
 
 - **Khan's Algorithm**
-  An implementation of Kahn's Algorithm for topological sorting of Directed Acyclic Graphs (DAGs). It uses in-degree tracking and a queue to process nodes in linear order. Efficiently detects cycles and produces a valid topological ordering if one exists.
+	An implementation of Kahn's Algorithm for topological sorting of Directed Acyclic Graphs (DAGs). It uses in-degree tracking and a queue to process nodes in linear order. Efficiently detects cycles and produces a valid topological ordering if one exists.
 
+- **QuickPick Algorithm**
+	An efficient divide-and-conquer algorithm for finding the \(k\)-th smallest element in an unsorted array in \(O(n)\) average time. It operates by selecting a pivot using the Median of Medians algorithm, partitioning the array aroundthe pivot, and recursively searching in the relevant partition.
 
-## Learning Goals
-
-This repository is not only about visualizing existing algorithms but also learning and experimenting with the following:
-
-- **Understanding Core DSA Concepts**: The main aim is to learn how various data structures like segment trees, binary trees, and others work internally, how to manipulate them, and how they can be optimized for specific use cases.
-- **Backend Algorithm Design**: Through C++, learning how to use REST API libraries to send data.
-- **Frontend Visualization**: Using React, this project visualizes how algorithms and data structures function in real-time, allowing users to step through the logic and understand each stage of execution.
-- **Improving JavaScript Skills**: As React is used for the frontend, this is a great opportunity to practice JavaScript, improve proficiency in React, and get better at building interactive web applications.
-- **Boost Testing Library** Utilizing Boost test libraries to extensively test algorithms
