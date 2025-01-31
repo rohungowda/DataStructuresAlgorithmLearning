@@ -13,3 +13,5 @@ This repository is a learning project aimed at building a **Data Structures and 
 - **QuickPick Algorithm**
 	An efficient divide-and-conquer algorithm for finding the \(k\)-th smallest element in an unsorted array in \(O(n)\) average time. It operates by selecting a pivot using the Median of Medians algorithm, partitioning the array aroundthe pivot, and recursively searching in the relevant partition.
 
+- **Bellman-Ford**
+	A Single Source SHortest Path Algorithm that work on a graph with positive and negative weights. Works by utilizing the intuition that we can find the shortest path in at most number of nodes - 1 hops. Essentially a question of given a constraint of <= i hops, what is the minimum path we can get. Gauranteed to be solved in n - 1 hops unless the graph has a negative weight cycle.
