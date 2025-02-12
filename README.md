@@ -14,4 +14,7 @@ This repository is a learning project aimed at building a **Data Structures and 
 	An efficient divide-and-conquer algorithm for finding the \(k\)-th smallest element in an unsorted array in \(O(n)\) average time. It operates by selecting a pivot using the Median of Medians algorithm, partitioning the array aroundthe pivot, and recursively searching in the relevant partition.
 
 - **Bellman-Ford**
-	A Single Source SHortest Path Algorithm that work on a graph with positive and negative weights. Works by utilizing the intuition that we can find the shortest path in at most number of nodes - 1 hops. Essentially a question of given a constraint of <= i hops, what is the minimum path we can get. Gauranteed to be solved in n - 1 hops unless the graph has a negative weight cycle.
+	A Single Source Shortest Path Algorithm that work on a graph with positive and negative weights. Works by utilizing the intuition that we can find the shortest path in at most number of nodes - 1 hops. Essentially a question of given a constraint of <= i hops, what is the minimum path we can get. Gauranteed to be solved in n - 1 hops unless the graph has a negative weight cycle.
+
+- **Union-Find**
+	A Union-Find implementation that uses path compression to shorten find operations and rank to keep trees balanced. Works by three two major operations -> union and find. Union combines two nodes together such that the nodes will share the same parent, and finds parents of nodes recursively while updating unreached nodes along the way.
